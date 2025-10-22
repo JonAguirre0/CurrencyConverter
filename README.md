@@ -11,8 +11,8 @@ Run the app on your local server(localhost).
 * server.js : This file contains the code for caching responses and all the API GET's. 
 * images Folder : This folder contains the images which are used in the README and icon.
 
-![](./images/image3.png)
+![](./public/images/image3.png)
 
-![](./images/image3.png)
+![](./public/images/image3.png)
 
 API used from: https://www.exchangerate-api.com/
