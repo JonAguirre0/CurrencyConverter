@@ -7,6 +7,8 @@ Users can select a currency from the available list for the "From" field, and th
 
 Users can input the specific amount of money they wish to convert based on their selected currencies into the "Amount" field.
 
+Clicking on the "Convert" button will then display the result of the conversion along with the conversion rate that was used for the calculation.
+
 # Files
 
 * index.html : This file contains the HTML code for the app.
