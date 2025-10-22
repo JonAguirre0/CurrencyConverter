@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="style.css">
+        <title>Currency Converter</title>
+        <link rel="icon" href="./images/image2.png" class="icon"  >
+    </head>
+    <body>
+
+        <div class="main-container">
+            <div class="name-container">
+                Currency Exchange
+            </div>
+            <div class="currency-container">
+                <div class="left-container">
+                    <div class="inputTitle">Amount</div>
+                    <div class="option1Title">From</div>
+                    <input class="input" placeholder="$ 0.00">
+                    <div class="dropDown">
+                        <input class="option1" readonly>
+                        <button class="dropDownBtn"><i class="fa-solid fa-angle-down"></i></button>
+                        <div class="dropDown-content"></div>
+                    </div>
+                    <div class="option2Title">To</div>
+                    <div class="dropDown2">
+                        <input class="option2" readonly>
+                        <button class="dropDownBtn2"><i class="fa-solid fa-angle-down"></i></button>
+                        <div class="dropDown2-content">
+                            <!-- <a href="#currency1">Currency 1</a>
+                            <a href="#currency2">Currency 2</a>
+                            <a href="#currency3">Currency 3</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="convert-container">Convert</div>
+                
+                <div class="result-container">
+                    <div class="rateTitle">Rate</div>
+                    <div class="resultTitle">Result</div>
+                    <div class="result">
+                        <div class="conversion-rate"></div>
+                        <div class="symbol"><div class="option3"></div></div>
+                        <div class="conversion-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

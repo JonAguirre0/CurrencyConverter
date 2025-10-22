@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+:root {
+    --font1: "Electrolize";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font1);
+    margin: 0;
+    background-color: black;
+    background: linear-gradient(to right, #360033, #0b8793);
+}
+
+.main-container {
+    background-color: #f6f5f0;
+    border-radius: 10px;
+    width: 80%;
+    margin: 3rem auto;
+    height: 75rem;
+    left: 38rem;
+    box-shadow: 0px 8px 20px 5px rgba(255,255,255,0.5);
+}
+
+.name-container {
+    background-color: #6B7A8F;
+    color: aliceblue;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 3rem 0;
+    width: 100%;
+    height: 10rem;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.currency-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #DCC7AA;
+    border-radius: 10px;
+    width: 95%;
+    height: 60rem;
+    top: 2rem;
+    left: 3rem;
+}
+
+.left-container {
+    position: relative;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 94rem;
+    height: 12rem;
+    top: 15rem;
+    left: 14rem;
+}
+.inputTitle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2rem;
+    left: 8rem;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 9rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.left-container .input {
+    position: relative;
+    width: 20rem;
+    height: 4rem;
+    top: 5rem;
+    left: 3rem;
+    padding: 0 1rem;
+    font-size: 28px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+.left-container .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696, 0px 0px 20px white;
+}
+.left-container .dropDown {
+    position: relative;
+    width: 21rem;
+    height: 4rem;
+    left: 27rem;
+    top: 1rem;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.option1Title {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2rem;
+    left: 32rem;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 9rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.left-container .dropDown .option1 {
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+    height: 3rem;
+    width: 16rem;
+    font-size: 21px;
+    text-align: center;
+    outline: none;
+    caret-color: transparent;
+    background-color: antiquewhite;
+    border: black solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.left-container .dropDown .dropDownBtn {
+    position: relative;
+    left: 1.2rem;
+    top: 0.5rem;
+    width: 3rem;
+    height: 2rem;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.left-container .dropDown .dropDownBtn:hover {
+    background-color: wheat;
+}
+.left-container .dropDown .dropDownBtn:active {
+    transform: scale(0.9);
+}
+.left-container .dropDown .dropDown-content {
+    display: none;
+    position: absolute;
+    gap: 1rem;
+    width:15.8rem;
+    height: 11rem;
+    left: 1.08rem;
+    text-align: center;
+    flex-direction: column;
+    overflow-y:scroll;
+    z-index: 100;
+}
+.left-container .dropDown .dropDown-content img {
+    display: flex;
+    position: relative;
+    width: 4rem;
+    top: 3.5rem;
+    z-index: 100;
+}
+.left-container .dropDown .dropDown-content a {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    color: black;
+}
+.left-container .dropDown .dropDown-content a:hover {
+    background-color: slategray;
+}
+.left-container .dropDown .dropDown-content.show{
+    display: flex;
+    position: absolute;
+    font-size: 21px;
+    background-color: antiquewhite;
+}
+
+
+
+.right-container {
+    position: relative;
+    background-color: yellowgreen;
+    width: 60rem;
+    height: 10rem;
+    top: 15rem;
+    right: 2rem;
+}
+
+.left-container .dropDown2 {
+    position: relative;
+    width: 21rem;
+    height: 4rem;
+    left: 54rem;
+    bottom: 3rem;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+.left-container .option2Title {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2rem;
+    left: 59rem;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 9rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.left-container .dropDown2 .option2 {
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+    height: 3rem;
+    width: 16rem;
+    font-size: 21px;
+    text-align: center;
+    outline: none;
+    caret-color: transparent;
+    background-color: antiquewhite;
+    border: black solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.left-container .dropDown2 .dropDownBtn2 {
+    position: relative;
+    left: 1.2rem;
+    top: 0.5rem;
+    width: 3rem;
+    height: 2rem;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.left-container .dropDown2 .dropDownBtn2:hover {
+    background-color: wheat;
+}
+.left-container .dropDown2 .dropDownBtn2:active {
+    transform: scale(0.9);
+}
+.left-container .dropDown2 .dropDown2-content {
+    display: none;
+    position: absolute;
+    gap: 1rem;
+    width:15.8rem;
+    height: 11rem;
+    left: 1.08rem;
+    text-align: center;
+    flex-direction: column;
+    overflow-y:scroll;
+}
+.left-container .dropDown2 .dropDown2-content a {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    color: black;
+}
+.left-container .dropDown2 .dropDown2-content a:hover {
+    background-color: slategray;
+}
+.left-container .dropDown2 .dropDown2-content.show{
+    display: flex;
+    position: absolute;
+    font-size: 21px;
+    background-color: antiquewhite;
+}
+
+
+.convert-container {
+    background-color: #F7882F;
+    background: linear-gradient(to left, #ffe259, #ffa751);
+    width: 10rem;
+    height: 5rem;
+    top: 19rem;
+    right: 18rem;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 8px #CA5F07, 0px 10px 10px 2px rgba(0,0,0,0.5);
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+.convert-container:active {
+    transform: translateY(10px);
+    box-shadow: none;
+}
+.convert-container:hover {
+    animation: slideBtn 3s linear infinite;
+}
+/* @keyframes slideBtn {
+    to {
+        background-position: 16.5vw
+    }
+} */
+
+
+.result-container {
+    display: none;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    border-style: solid;
+    border-color: antiquewhite;
+    border-radius: 10px;
+    width: 80rem;
+    height: 15rem;
+    top: 35rem;
+    left: 20rem;
+    font-size: 41px;
+    z-index: 100;
+}
+.result-container.show {
+    display: flex;
+}
+
+.result-container .rateTitle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 10.5rem;
+    left: 9rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    width: 10rem;
+    height: 3rem;
+    z-index: 100;
+}
+
+.result-container .resultTitle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 10.5rem;
+    right: 22rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    width: 10rem;
+    height: 3rem;
+    z-index: 100;
+}
+
+.result-container .result {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.result-container .conversion-rate {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    width: 20rem;
+    height: 6rem;
+    top: 1rem;
+}
+
+.result-container .conversion-result {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-indent: 3rem;
+    background-color: antiquewhite;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    width: 47rem;
+    height: 6rem;
+    top: 1rem;
+    margin: 0rem;
+}
+
+.result-container .symbol {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 5rem;
+    right: 15rem;
+    bottom: 3.8rem;
+    margin: 0rem;
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 2.3rem;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1920px) {
+    body {
+        background: linear-gradient(to right, #360033, #0b8793);
+    }
+    .main-container {
+        height: 53rem;
+        width: 90%;
+    }
+    .currency-container {
+        height: 39rem;
+    }
+    .left-container {
+        left: 5rem;
+        top: 5rem;
+    }
+    .left-container .dropDown .dropDown-content {
+        height: 7.5rem;
+    }
+    .left-container .dropDown2 .dropDown2-content {
+        height: 7.5rem;
+    }
+    .convert-container {
+        right: 8rem;
+        top: 9rem;
+    }
+    .result-container {
+        top: 21rem;
+        left: 12rem;
+    }
+    .result-container .rateTitle {
+        font-size: 24px;
+    }
+    .result-container .resultTitle {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 1400px) and (min-height:768px){
+    .main-container {
+        height: 47rem;
+        width: 90%;
+    }
+    .main-container .name-container {
+        height: 8rem;
+        padding: 2rem 0;
+    }
+    .currency-container {
+        height: 34rem;
+        left: 2rem;
+    }
+    .left-container {
+        left: 3rem;
+        top: 2rem;
+        height: 10rem;
+        width: 120rem;
+    }
+    .left-container .input {
+        width: 15rem;
+    }
+    .left-container .inputTitle {
+        left: 6rem;
+    }
+    .left-container .option1Title {
+        left: 26rem;
+    }
+    .left-container .dropDown {
+        width: 17rem;
+        left: 23rem;
+    }
+    .left-container .dropDown .option1 {
+        width: 13rem;
+    }
+    .left-container .dropDown .dropDownBtn {
+        width: 2rem;
+    }
+    .left-container .dropDown .dropDown-content {
+        height: 7.5rem;
+        width: 13rem;
+    }
+    .left-container .option2Title {
+        left: 46rem;
+    }
+    .left-container .dropDown2 {
+        width: 17rem;
+        left: 43rem;
+    }
+    .left-container .dropDown2 .option2 {
+        width: 13rem;
+    }
+    .left-container .dropDown2 .dropDownBtn2 {
+        width: 2rem;
+    }
+    .left-container .dropDown2 .dropDown2-content {
+        height: 7.5rem;
+        width: 13rem;
+    }
+    .convert-container {
+        right: 3.3rem;
+        top: 5.6rem;
+        width: 6rem;
+    }
+    .result-container {
+        top: 18rem;
+        left: 8rem;
+        width: 60rem;
+    }
+    .result-container .rateTitle {
+        font-size: 24px;
+        left: 5rem;
+    }
+    .result-container .conversion-rate {
+        width: 17rem;
+        font-size: 2rem;
+    }
+    .result-container .resultTitle {
+        font-size: 24px;
+        right: 16rem;
+    }
+    .result-container .conversion-result {
+        width: 37rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 390px) {
+    .main-container {
+        height: 67rem;
+        width: 90%;
+    }
+    .main-container .name-container {
+        height: 4rem;
+        padding: 1rem 0;
+        font-size: 24px;
+    }
+    .currency-container {
+        height: 60rem;
+        left: 0.6rem;
+    }
+    .left-container {
+        left: 1rem;
+        top: 2rem;
+        height: 25rem;
+        width: 90%;
+    }
+    .left-container .input {
+        width: 12rem;
+        top: 3.5rem;
+    }
+    .left-container .inputTitle {
+        left: 5.2rem;
+        width: 8rem;
+        top: 1rem;
+    }
+    .left-container .option1Title {
+        left: 4rem;
+        top: 8.5rem;
+    }
+    .left-container .dropDown {
+        width: 14rem;
+        left: 2rem;
+        top: 7rem;
+    }
+    .left-container .dropDown .option1 {
+        width: 10rem;
+    }
+    .left-container .dropDown .dropDownBtn {
+        width: 2rem;
+    }
+    .left-container .dropDown .dropDown-content {
+        height: 5rem;
+        width: 9.9rem;
+    }
+    .left-container .option2Title {
+        left: 4rem;
+        top: 16.5rem;
+    }
+    .left-container .dropDown2 {
+        width: 14rem;
+        left: 2rem;
+        top: 11rem;
+    }
+    .left-container .dropDown2 .option2 {
+        width: 10rem;
+    }
+    .left-container .dropDown2 .dropDownBtn2 {
+        width: 2rem;
+    }
+    .left-container .dropDown2 .dropDown2-content {
+        height: 7.5rem;
+        width: 9.9rem;
+    }
+    .convert-container {
+        right: 2rem;
+        top: 27.6rem;
+        width: 17rem;
+        position: absolute;
+    }
+    .result-container {
+        top: 34rem;
+        left: 0.4rem;
+        width: 20rem;
+        height: 25rem;
+    }
+    .result-container .result {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .result-container .rateTitle {
+        font-size: 24px;
+        left: 4.5rem;
+        top: 0rem;
+    }
+    .result-container .conversion-rate {
+        width: 17rem;
+        font-size: 2rem;
+    }
+    .result-container .resultTitle {
+        font-size: 24px;
+        left: 4.5rem;
+        top: 10rem;
+    }
+    .result-container .conversion-result {
+        width: 19rem;
+        height: 10rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
